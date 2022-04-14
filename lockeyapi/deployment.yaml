@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: lockeyapi
-  replicas: 1
+  replicas: 3
   template:
     metadata:
       labels:
