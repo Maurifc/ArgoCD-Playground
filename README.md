@@ -29,7 +29,21 @@ Get the Admin password
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
 ```
 
-Access the UI via browser using `admin` user and `http://localhost:8080/`
+
+Login on CLI
+```bash
+argocd login
+```
+
+> Optionally, you can access the UI via browser using `admin` user and `http://localhost:8080/`
+
+Create the app using CLI
+```bash
+argocd app create lockeyapi --repo https://bitbucket.org/mauricarmo/lockey-api/ --path .k8s --dest-server https://kubernetes.default.svc --dest-namespace prod
+```
 
 ## References:
 https://argo-cd.readthedocs.io/en/stable/cli_installation/
+https://argo-cd.readthedocs.io/en/stable/user-guide/helm/
+https://www.arthurkoziel.com/private-helm-repo-with-gcs-and-github-actions/
+https://mohitgoyal.co/2021/05/03/deploy-helm-charts-on-kubernetes-clusters-with-argo-cd/
