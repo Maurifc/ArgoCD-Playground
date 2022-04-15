@@ -1,7 +1,7 @@
 kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: lockeyapi-canary-demo
+  name: canary-demo
 data:
   PORT: '3000'  
   JWT_EXPIRATION: '15m'
