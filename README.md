@@ -40,7 +40,11 @@ argocd login localhost:8080
 Create the app using CLI
 ```bash
 kubectl create namespace prod
-argocd app create lockeyapi --repo https://bitbucket.org/mauricarmo/kubernetes --path lockeyapi --dest-server https://kubernetes.default.svc --dest-namespace prod
+argocd app create lockeyapi-prod \
+    --repo git@bitbucket.org:mauricarmo/kubernetes.git \
+    --path lockeyapi \
+    --dest-server https://kubernetes.default.svc \
+    --dest-namespace prod
 ```
 
 Check app status
