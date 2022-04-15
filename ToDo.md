@@ -1,7 +1,7 @@
 # To Do
 
 :white_check_mark: Create K8s Manifests  
-:white_large_square: Canary deploy
+:white_check_mark: Canary deploy
 :white_large_square: Test helm chart hosted gcp cloud storage (with service account)
 
 ## Next steps
