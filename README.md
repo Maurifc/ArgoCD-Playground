@@ -5,7 +5,7 @@ This repo holds applications K8s Manifests or Hem Charts
 
 ## Useful commands
 
-### ArgoCD
+### Setup
 
 Install ArgoCD on Kubernetes cluster
 ```bash
@@ -36,6 +36,7 @@ argocd login localhost:8080
 
 > Optionally, you can access the UI via browser using `admin` user and `http://localhost:8080/`
 
+### Creating Applcation
 Create the app using CLI
 ```bash
 kubectl create namespace prod
@@ -52,10 +53,14 @@ Sync app with git repo
 argocd app sync lockeyapi
 ```
 
+### Private Repo
+Just add the repo with its a private key
+```bash
+argocd repo add git@bitbucket.org:mauricarmo/kubernetes.git --ssh-private-key-path ~/.ssh/id_rsa
+```
+
 ## References:
-https://argo-cd.readthedocs.io/en/stable/cli_installation/  
-https://argo-cd.readthedocs.io/en/stable/user-guide/helm/  
-https://www.arthurkoziel.com/private-helm-repo-with-gcs-and-github-actions/  
-https://mohitgoyal.co/2021/05/03/deploy-helm-charts-on-kubernetes-clusters-with-argo-cd/  
-https://github.com/argoproj/argo-rollouts  
+https://argo-cd.readthedocs.io/en/stable/cli_installation  
+https://argo-cd.readthedocs.io/en/stable/user-guide/helm  
 https://github.com/argoproj/argo-rollouts/blob/master/docs/getting-started.md  
+https://argo-cd.readthedocs.io/en/release-1.8/user-guide/private-repositories  
