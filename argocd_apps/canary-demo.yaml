@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://bitbucket.org/mauricarmo/kubernetes' # Repo to sync
+    repoURL: 'git@bitbucket.org:mauricarmo/kubernetes.git' # Repo to sync
     path: canary-demo # Folder within the repo, with .yaml files
     targetRevision: master # Branch
   destination:
