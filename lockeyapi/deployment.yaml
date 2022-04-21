@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: lockeyapi
-  replicas: 1
+  replicas: 3
   template:
     metadata:
       labels:
@@ -20,7 +20,7 @@ spec:
           imagePullPolicy: IfNotPresent
           resources:
             requests:
-              cpu: 20m
+              cpu: 10m
               memory: 50Mi
             limits:
               cpu: 100m
