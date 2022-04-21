@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'git@bitbucket.org:mauricarmo/kubernetes.git'
     path: charts/lockeyapi
-    targetRevision: helmchart_repo
+    targetRevision: master
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: dev
