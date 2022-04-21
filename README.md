@@ -64,7 +64,6 @@ argocd repo add git@bitbucket.org:mauricarmo/kubernetes.git --ssh-private-key-pa
 ```
 
 ## References:
-https://argo-cd.readthedocs.io/en/stable/cli_installation  
-https://argo-cd.readthedocs.io/en/stable/user-guide/helm  
-https://github.com/argoproj/argo-rollouts/blob/master/docs/getting-started.md  
-https://argo-cd.readthedocs.io/en/release-1.8/user-guide/private-repositories  
+[ArgoCD with Helm](https://argo-cd.readthedocs.io/en/stable/user-guide/helm)  
+[ArgoRollouts Getting Started](https://github.com/argoproj/argo-rollouts/blob/master/docs/getting-started.md)  
+[Setting up Private Repositories](https://argo-cd.readthedocs.io/en/release-1.8/user-guide/private-repositories)  
