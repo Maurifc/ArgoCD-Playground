@@ -63,6 +63,17 @@ Just add the repo with its a private key
 argocd repo add git@bitbucket.org:mauricarmo/kubernetes.git --ssh-private-key-path ~/.ssh/id_rsa
 ```
 
+## Setup Argo Rollouts
+Create namespace
+```bash
+kubectl create namespace argo-rollouts
+```
+
+Deploy
+```bash
+kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
+```
+
 ## Folders
 | Name | Description |
 | ---- | ----------- |
