@@ -63,6 +63,16 @@ Just add the repo with its a private key
 argocd repo add git@bitbucket.org:mauricarmo/kubernetes.git --ssh-private-key-path ~/.ssh/id_rsa
 ```
 
+## Folders
+| Name | Description |
+| ---- | ----------- |
+| argocd_apps | Argo's applications described as K8s manifests |
+| canary-demo | Canary demo with Argo Rollouts' |
+| charts/lockeyapi | An not packed Helm chart |
+| lockeyapi | K8s manifests to deploy LockeyAPI |
+| sample_app | Sample app used in canary demo |
+
+
 ## References:
 [ArgoCD with Helm](https://argo-cd.readthedocs.io/en/stable/user-guide/helm)  
 [ArgoRollouts Getting Started](https://github.com/argoproj/argo-rollouts/blob/master/docs/getting-started.md)  
