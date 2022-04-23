@@ -36,7 +36,7 @@ argocd login localhost:8080
 
 > Optionally, you can access the UI via browser using `admin` user and `http://localhost:8080/`
 
-### Creating Applcation
+### Creating Application
 Create the app using CLI
 ```bash
 kubectl create namespace prod
